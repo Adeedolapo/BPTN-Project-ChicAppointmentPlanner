@@ -1,0 +1,18 @@
+Booking ID: 1d1f927c-4cf1-486f-89cc-57a604118fe1
+Customer: null
+Booking ID: f3059f58-043d-462f-8b2a-be46762ca8ea
+Customer: Adedolapo
+Service: Haircut
+Price: $50.0
+Stylist: businessModels.Stylist@7fbe847c
+Date: 2024-11-06
+Time: 12:00
+----------------------
+Booking ID: 48112365-7851-46ce-ac2a-79701e14f457
+Customer: Adedolapo
+Service: Manicure
+Price: $20.0
+Stylist: businessModels.Stylist@7fbe847c
+Date: 2024-11-06
+Time: 12:00
+----------------------
