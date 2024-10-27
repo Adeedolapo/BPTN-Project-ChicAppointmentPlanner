@@ -1,0 +1,9 @@
+Booking Report:
+
+Booking ID: f5ee5456-5def-4e36-8536-6ac9ce317e53
+Customer: Oyin
+Service: Manicure
+Date: 2024-10-27
+Time: 09:00
+Status: Completed
+----------------------

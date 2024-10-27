@@ -1,3 +1,6 @@
+/* The ChicServices class is designed to encapsulate the details of a service. 
+ This class plays a crucial role in managing service information. */
+
 package businessModels;
 
 public class ChicServices {
@@ -25,4 +28,9 @@ public class ChicServices {
         return stylists;
     }
 
+  //Override toString() to display service name in Javafx
+    @Override
+    public String toString() {
+        return name; // This ensures that only the service name is displayed in ComboBoxes
+    }
 }

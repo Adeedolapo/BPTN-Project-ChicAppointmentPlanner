@@ -53,9 +53,11 @@ public class Booking {
             System.out.println("Selected time is not available.");
             return;
         }
+        
+        String status = "Completed"; // Set the initial status
 
         // Confirm and create the booking
-        Bookings newBooking = bookingManager.createBooking(customerName, customerContact, selectedService, date, time);
+        Bookings newBooking = bookingManager.createBooking(customerName, customerContact, selectedService, date, time, status);
         
         if (newBooking == null) {
             System.out.println("Failed to create booking. Please try again.");

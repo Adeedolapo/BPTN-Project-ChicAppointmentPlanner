@@ -39,14 +39,9 @@ public class Login {
             String bookingId = scanner.nextLine();
 
             if (bookingManager.cancelBooking(bookingId)) {
-                System.out.println("Reservation canceled successfully.");
+                System.out.println("Booking cancelled successfully.");
             } else {
                 System.out.println("Booking ID not found.");
-    }
-        }
-        public void closeScanner() {
-        	if (scanner != null) {
-        		scanner.close();
-        	}
-        }
-    }
+          }
+     }
+}

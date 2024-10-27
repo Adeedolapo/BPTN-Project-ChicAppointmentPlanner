@@ -13,7 +13,6 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
-import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
 
@@ -31,8 +30,7 @@ public class LoginUIController {
 	@FXML
 	private ImageView imageView;
 	
-	private UserAuthentication userAuthentication;
-	
+	private UserAuthentication userAuthentication;	
 
     // Initialize method to link authentication services
     public LoginUIController() {
@@ -99,11 +97,7 @@ public class LoginUIController {
             window.setScene(new Scene(bookingUIRoot));
             window.show();
         }
-    
-
-	private void Secondary() throws IOException {
-        App.setRoot("BookingUI");
     }
-}
+
 
 

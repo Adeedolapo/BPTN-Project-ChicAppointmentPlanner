@@ -1,6 +1,7 @@
+/* The User class is used to manage user authentication */
 package businessModels;
 
-/**
+/*
  * The User class represents a user in the system with a username and password.
  * It utilizes encapsulation to keep the fields private and accessible through public methods.
  */

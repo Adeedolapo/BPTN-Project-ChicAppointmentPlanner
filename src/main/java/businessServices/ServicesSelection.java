@@ -1,3 +1,5 @@
+/*manage services and available timeslots*/
+
 package businessServices;
 
 import businessModels.ChicServices;
@@ -9,8 +11,8 @@ import java.util.List;
 import java.util.Scanner;
 
 public class ServicesSelection {
-    private List<ChicServices> services;
-    private List<LocalTime> timesAvailable;
+    private List<ChicServices> services;//holds list of services
+    private List<LocalTime> timesAvailable;// stores available time for booking
 
     public ServicesSelection() {
         services = new ArrayList<>();
@@ -52,7 +54,8 @@ public class ServicesSelection {
     }
 
     public ChicServices selectServiceWithStylist(Scanner scanner) {
-        displayServices();
+        while (true) {
+        	displayServices();        
 
         System.out.print("Enter the name of the service you want to book (or type 'exit' to cancel): ");
         String serviceName = scanner.nextLine();
@@ -70,6 +73,7 @@ public class ServicesSelection {
         System.out.println("Invalid service name.");
         return null; // Return null if no valid service is found
     }
+   }
 
     
 	public void displayTimesAvailable() {

@@ -10,23 +10,25 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.text.Font?>
+<?import com.bptn.bptnproject.BookingUIController?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.bptn.bptnproject.BookingUIController">
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #00FFFF;"  xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.bptn.bptnproject.BookingUIController">
    <left>
       <AnchorPane prefHeight="400.0" prefWidth="174.0" BorderPane.alignment="CENTER">
          <children>
-            <ImageView fitHeight="400.0" fitWidth="224.0" layoutX="1.0">
+            <ImageView fitHeight="400.0" fitWidth="224.0" layoutY="4.0">
                <image>
-                  <Image url="@../../../../../Img/salonimage.PNG" />
+                  <Image url="@Img/salonimage.PNG" />
                </image>
             </ImageView>
          </children>
       </AnchorPane>
    </left>
    <center>
-      <AnchorPane fx:id="serviceManager" prefHeight="400.0" prefWidth="339.0" BorderPane.alignment="CENTER">
+      <AnchorPane fx:id="serviceManager" prefHeight="443.0" prefWidth="410.0" BorderPane.alignment="CENTER">
          <children>
-            <Label fx:id="message" layoutX="110.0" layoutY="31.0" />
+            <Label fx:id="message" layoutX="332.0" layoutY="5.0" prefHeight="17.0" prefWidth="1.0" />
             <Label fx:id="preferredService" layoutX="2.0" layoutY="101.0" prefHeight="19.0" prefWidth="154.0" text="Select stylist:">
                <font>
                   <Font name="System Bold" size="13.0" />
@@ -43,31 +45,30 @@
                   <Font name="System Bold" size="13.0" />
                </font>
             </Label>
-            <TextField fx:id="bookingTime" layoutX="62.0" layoutY="197.0" prefHeight="25.0" prefWidth="173.0" />
-            <Button fx:id="confirmBooking" layoutX="94.0" layoutY="259.0" mnemonicParsing="false" onAction="#confirm" prefHeight="25.0" prefWidth="147.0" text="Confirm Booking">
+            <Button fx:id="confirmBooking" layoutX="89.0" layoutY="225.0" mnemonicParsing="false" onAction="#confirm" prefHeight="25.0" prefWidth="147.0" text="Confirm Booking">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font>
             </Button>
             <ComboBox fx:id="selectStylist" layoutX="161.0" layoutY="98.0" prefWidth="150.0" promptText="select stylist" />
-            <ComboBox fx:id="selectService" layoutX="161.0" layoutY="58.0" prefWidth="150.0" promptText="select service" />
-            <Label layoutX="8.0" layoutY="285.0" prefHeight="29.0" prefWidth="204.0" text="To cancel, provide details below:">
+            <ComboBox fx:id="selectService" layoutX="162.0" layoutY="70.0" prefWidth="150.0" promptText="select service" />
+            <Label layoutX="3.0" layoutY="254.0" prefHeight="29.0" prefWidth="204.0" text="To cancel, provide details below:">
                <font>
                   <Font name="System Bold" size="13.0" />
                </font>
             </Label>
-            <Label layoutX="8.0" layoutY="325.0" prefHeight="19.0" prefWidth="71.0" text="BookingID:">
+            <Label layoutX="3.0" layoutY="283.0" prefHeight="19.0" prefWidth="71.0" text="BookingID:">
                <font>
                   <Font name="System Bold" size="13.0" />
                </font>
             </Label>
-            <TextField fx:id="bookingID" layoutX="93.0" layoutY="322.0" />
-            <Button fx:id="confirmCancellation" layoutX="93.0" layoutY="358.0" mnemonicParsing="false" onAction="#cancel" prefHeight="27.0" prefWidth="149.0" text="Confirm Cancellation">
+            <TextField fx:id="bookingID" layoutX="81.0" layoutY="280.0" />
+            <Button fx:id="confirmCancellation" layoutX="81.0" layoutY="309.0" mnemonicParsing="false" onAction="#cancel" prefHeight="27.0" prefWidth="149.0" text="Confirm Cancellation">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font>
             </Button>
-            <Label fx:id="preferredService1" layoutX="2.0" layoutY="61.0" prefHeight="19.0" prefWidth="154.0" text="Select preferred service:">
+            <Label fx:id="preferredService1" layoutX="2.0" layoutY="73.0" prefHeight="19.0" prefWidth="154.0" text="Select preferred service:">
                <font>
                   <Font name="System Bold" size="13.0" />
                </font>
@@ -78,12 +79,30 @@
                </font>
             </Label>
             <TextField fx:id="priceField" layoutX="63.0" layoutY="132.0" prefHeight="25.0" prefWidth="173.0" />
-            <Label layoutX="10.0" layoutY="229.0" prefHeight="19.0" prefWidth="76.0" text="BookingID:">
+            <Label layoutX="3.0" layoutY="12.0" prefHeight="19.0" prefWidth="102.0" text="Customer name:">
                <font>
                   <Font name="System Bold" size="13.0" />
                </font>
             </Label>
-            <TextField fx:id="bookingID" layoutX="81.0" layoutY="226.0" prefHeight="25.0" prefWidth="173.0" promptText="N/A" />
+            <TextField fx:id="customerName" layoutX="113.0" layoutY="9.0" prefHeight="25.0" prefWidth="173.0" />
+            <Label layoutX="3.0" layoutY="43.0" prefHeight="19.0" prefWidth="117.0" text="Customer contact:">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <TextField fx:id="customerContact" layoutX="125.0" layoutY="40.0" prefHeight="25.0" prefWidth="173.0" />
+            <Label layoutX="11.0" layoutY="341.0" prefHeight="29.0" prefWidth="204.0" text="Report Generation:">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="generateReport" layoutX="149.0" layoutY="344.0" prefWidth="150.0" promptText="generate report" />
+            <Button fx:id="confirmReportGeneration" layoutX="151.0" layoutY="373.0" mnemonicParsing="false" onAction="#confirmReport" prefHeight="25.0" prefWidth="147.0" text="Generate">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <ComboBox fx:id="selectTime" layoutX="62.0" layoutY="197.0" prefWidth="150.0" promptText="select time" />
          </children>
       </AnchorPane>
    </center>

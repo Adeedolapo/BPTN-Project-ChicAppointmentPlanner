@@ -5,3 +5,21 @@ Service: Braids
 Date: 2024-06-06
 Time: 12:00
 ----------------------
+77a21cc2-7de7-4bec-9f31-c56930561677,John Doe,123-456-7890,Haircut,2024-10-23,10:00
+aee2c9fa-9e94-473b-a351-589a078130e2,Jane Doe,987-654-3210,Haircut,2024-10-23,14:00
+5b542083-df90-450b-8bd4-3c153b41c501,Jane Doe,987-654-3210,Haircut,2024-10-23,14:00
+Cancellation ID: 5b542083-df90-450b-8bd4-3c153b41c501
+Customer: Jane Doe
+Service: Haircut
+Date: 2024-10-23
+Time: 14:00
+----------------------
+2c8cf080-fa24-40f5-bb5e-c6a7f7254791,Jane Doe,987-654-3210,Haircut,2024-10-23,14:00
+dfab78a1-5b67-4a60-89c7-3eac589001e7,Jane Doe,987-654-3210,Haircut,2024-10-23,14:00
+Cancellation ID: dfab78a1-5b67-4a60-89c7-3eac589001e7
+Customer: Jane Doe
+Service: Haircut
+Date: 2024-10-23
+Time: 14:00
+----------------------
+aff40475-a55b-43d1-83ab-0e1a7322e867,Adedolapo,1234567,Braids,2024-10-30,12:00

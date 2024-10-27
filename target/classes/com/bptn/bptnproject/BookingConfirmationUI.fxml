@@ -9,13 +9,13 @@
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.bptn.bptnproject.BookingConfirmationUIController">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #00FFFF;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.bptn.bptnproject.BookingConfirmationUIController">
    <left>
       <AnchorPane prefHeight="400.0" prefWidth="174.0" BorderPane.alignment="CENTER">
          <children>
             <ImageView fitHeight="400.0" fitWidth="224.0" layoutX="1.0">
                <image>
-                  <Image url="@../../../../../Img/salonimage.PNG" />
+                  <Image url="@Img/salonimage.PNG" />
                </image>
             </ImageView>
          </children>
@@ -29,12 +29,12 @@
                   <Font name="System Bold" size="13.0" />
                </font>
             </Label>
-            <Label layoutX="17.0" layoutY="181.0" prefHeight="19.0" prefWidth="39.0" text="Price:">
+            <Label layoutX="17.0" layoutY="251.0" prefHeight="19.0" prefWidth="39.0" text="Price:">
                <font>
                   <Font name="System Bold" size="13.0" />
                </font>
             </Label>
-            <Label layoutX="17.0" layoutY="247.0" prefHeight="19.0" prefWidth="38.0" text="Time:">
+            <Label layoutX="17.0" layoutY="317.0" prefHeight="19.0" prefWidth="38.0" text="Time:">
                <font>
                   <Font name="System Bold" size="13.0" />
                </font>
@@ -44,33 +44,45 @@
                   <Font name="System Bold" size="13.0" />
                </font>
             </Label>
-            <Label layoutX="5.0" layoutY="112.0" prefHeight="19.0" prefWidth="86.0" text="Service name:">
+            <Label layoutX="5.0" layoutY="182.0" prefHeight="19.0" prefWidth="86.0" text="Service name:">
                <font>
                   <Font name="System Bold" size="13.0" />
                </font>
             </Label>
-            <Label layoutX="17.0" layoutY="143.0" prefHeight="19.0" prefWidth="49.0" text="Stylist:">
+            <Label layoutX="17.0" layoutY="213.0" prefHeight="19.0" prefWidth="49.0" text="Stylist:">
                <font>
                   <Font name="System Bold" size="13.0" />
                </font>
             </Label>
-            <Label layoutX="17.0" layoutY="215.0" prefHeight="19.0" prefWidth="39.0" text="Date:">
+            <Label layoutX="17.0" layoutY="285.0" prefHeight="19.0" prefWidth="39.0" text="Date:">
                <font>
                   <Font name="System Bold" size="13.0" />
                </font>
             </Label>
             <TextField fx:id="bookingID" editable="false" layoutX="97.0" layoutY="77.0" />
-            <TextField fx:id="serviceName" editable="false" layoutX="97.0" layoutY="109.0" />
-            <TextField fx:id="stylistName" editable="false" layoutX="97.0" layoutY="140.0" />
-            <TextField fx:id="price" editable="false" layoutX="97.0" layoutY="178.0" />
-            <TextField fx:id="bookingDate" editable="false" layoutX="97.0" layoutY="212.0" />
-            <TextField fx:id="bookingTime" editable="false" layoutX="97.0" layoutY="244.0" />
-            <Button fx:id="backToLoginButton" layoutX="97.0" layoutY="285.0" mnemonicParsing="false" onAction="#goBackToLogin" text="Back to Login page">
+            <TextField fx:id="customerName" editable="false" layoutX="115.0" layoutY="111.0" />
+            <TextField fx:id="customerContact" editable="false" layoutX="126.0" layoutY="139.0" />
+            <TextField fx:id="serviceName" editable="false" layoutX="97.0" layoutY="179.0" />
+            <TextField fx:id="stylistName" editable="false" layoutX="97.0" layoutY="210.0" />
+            <TextField fx:id="price" editable="false" layoutX="97.0" layoutY="248.0" />
+            <TextField fx:id="bookingDate" editable="false" layoutX="97.0" layoutY="282.0" />
+            <TextField fx:id="bookingTime" editable="false" layoutX="97.0" layoutY="314.0" />
+            <Button fx:id="backToLoginButton" layoutX="97.0" layoutY="355.0" mnemonicParsing="false" onAction="#goBackToLogin" text="Back to Login page">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font>
             </Button>
             <Label fx:id="msg" layoutX="126.0" layoutY="24.0" />
+            <Label layoutX="12.0" layoutY="114.0" prefHeight="19.0" prefWidth="103.0" text="Customer name:">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="12.0" layoutY="142.0" prefHeight="19.0" prefWidth="118.0" text="Customer contact:">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
          </children>
       </AnchorPane>
    </center>

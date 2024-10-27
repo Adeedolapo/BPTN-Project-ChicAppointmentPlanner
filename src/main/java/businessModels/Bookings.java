@@ -1,6 +1,7 @@
+/* Creates and sets status of bookings for customers */
+
 package businessModels;
 
-import businessModels.ChicServices;
 import java.time.LocalDate;
 import java.time.LocalTime;
 
@@ -14,15 +15,16 @@ public class Bookings {
 	private String status;
 
     //Initialize constructor for service bookings
-    public Bookings(String bookingId, String customerName, String customerContact, ChicServices service, LocalDate date, LocalTime time) {
+    public Bookings(String bookingId, String customerName, String customerContact, ChicServices service, LocalDate date, LocalTime time,String status) {
         this.bookingId = bookingId;
         this.customerName = customerName;
         this.customerContact = customerContact;
         this.service = service;
         this.date = date;
         this.time = time;
+        this.status = status;
     }
-    
+    //provide a string representation of booking object
     @Override
     public String toString() {
         return "Booking{" +
@@ -32,6 +34,7 @@ public class Bookings {
                 ", service=" + service.getName() +
                 ", date=" + date +
                 ", time=" + time +
+                ", status=" + status +
                 '}';
     }
 
@@ -61,7 +64,7 @@ public class Bookings {
     }
 
     public String getStatus() {
-        return getStatus(); // Return current status
+        return this.status; // Return current status
     }
 
     public void setStatus(String status) {

@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #00FFFF;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.bptn.bptnproject.BookingCancellationUIController">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #00FFFF;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.bptn.bptnproject.ReportGenerationUIController">
    <left>
       <AnchorPane prefHeight="400.0" prefWidth="174.0" BorderPane.alignment="CENTER">
          <children>
@@ -23,7 +23,7 @@
    <center>
       <AnchorPane fx:id="serviceManager" prefHeight="400.0" prefWidth="339.0" BorderPane.alignment="CENTER">
          <children>
-            <Label fx:id="preferredService" layoutX="12.0" layoutY="42.0" prefHeight="19.0" prefWidth="256.0" text="Report Generated Successfully!!!">
+            <Label fx:id="report" layoutX="12.0" layoutY="42.0" prefHeight="19.0" prefWidth="256.0" text="Report Generated Successfully!!!">
                <font>
                   <Font name="System Bold" size="13.0" />
                </font>

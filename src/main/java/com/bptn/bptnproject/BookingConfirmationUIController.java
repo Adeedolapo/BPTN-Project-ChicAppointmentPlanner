@@ -18,6 +18,12 @@ public class BookingConfirmationUIController {
 
     @FXML
     private TextField bookingID;
+    
+    @FXML
+    private TextField customerName;
+    
+    @FXML
+    private TextField customerContact;
 
     @FXML
     private TextField serviceName;
@@ -44,8 +50,10 @@ public class BookingConfirmationUIController {
     private Label msg;
     
  // Method to populate the fields with booking details
-    public void setBookingDetails(String bookingIDValue, String serviceNameValue, String stylistNameValue, String priceValue, String bookingDateValue, String bookingTimeValue) {
+    public void setBookingDetails(String bookingIDValue, String serviceNameValue, String stylistNameValue, String priceValue, String bookingDateValue, String bookingTimeValue, String customerNameValue, String customerContactValue) {
         bookingID.setText(bookingIDValue);
+        customerName.setText(customerNameValue); // Set Customer Name
+        customerContact.setText(customerContactValue); 
         serviceName.setText(serviceNameValue);
         stylistName.setText(stylistNameValue);
         price.setText(priceValue);
