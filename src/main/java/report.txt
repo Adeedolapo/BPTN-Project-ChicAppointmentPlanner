@@ -1,9 +1,18 @@
-Booking Report:
-
-Booking ID: f5ee5456-5def-4e36-8536-6ac9ce317e53
-Customer: Oyin
-Service: Manicure
+Booking ID: 406e88c0-0874-4631-b62f-4dbc6736b01b
+Customer: Doyin
+Service: Braids
+Price: $100.0
+Stylist: Angel
 Date: 2024-10-27
 Time: 09:00
+Status: Completed
+----------------------
+Booking ID: 4aab6da1-6ef2-4003-ac2c-dde9acecbfb0
+Customer: Derin
+Service: Pedicure
+Price: $30.0
+Stylist: Victor
+Date: 2024-10-27
+Time: 10:00
 Status: Completed
 ----------------------

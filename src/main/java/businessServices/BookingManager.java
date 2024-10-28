@@ -18,6 +18,7 @@ import java.util.UUID;
 public class BookingManager {
 	
 	private String filePath = "C:\\Users\\Adedolapo\\OneDrive\\Desktop\\Eclipse\\BPTNproject-ChicAppointmentPlanner\\bptnproject\\src\\main\\java\\bookings.txt";
+	String reportFilePath = "C:\\Users\\Adedolapo\\OneDrive\\Desktop\\Eclipse\\BPTNproject-ChicAppointmentPlanner\\bptnproject\\src\\main\\java\\report.txt";
 	
 	private List<Bookings> bookings = new ArrayList<>();
     private ServicesSelection servicesSelection;
@@ -132,7 +133,7 @@ public class BookingManager {
         System.out.println(reportBuilder.toString());
 
         // Save report to file
-        String reportFilePath = "C:\\Users\\Adedolapo\\OneDrive\\Desktop\\Eclipse\\BPTNproject-ChicAppointmentPlanner\\bptnproject\\src\\main\\java\\report.txt";
+        
         saveReportToFile(reportBuilder.toString(), reportFilePath); 
     }
 
@@ -195,6 +196,8 @@ public class BookingManager {
                          .append("Status: ").append(booking.getStatus()).append("\n")
                          .append("----------------------\n");
         }
+        
+        saveReportToFile(reportBuilder.toString(), reportFilePath); 
         return reportBuilder.toString();
     }
 
